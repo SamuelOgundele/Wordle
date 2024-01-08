@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="WordleGame.SettingsPage"
+    Title="SETTINGS">
+    <!--Settings page-->
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" WidthRequest="350">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <!--Dark Theme Switch-->
+        <Grid Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="350">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Dark Theme" VerticalOptions="Center" HorizontalOptions="Start"/>
+            <Switch x:Name="DarkThemeSwitch" IsToggled="{Binding DarkTheme, Mode=TwoWay}" Grid.Column="1" HorizontalOptions="End" />
+        </Grid>
+        <BoxView Grid.Row="1" HeightRequest="1" Color="#3A3A3C" HorizontalOptions="FillAndExpand" />
+    </Grid>
+</ContentPage>

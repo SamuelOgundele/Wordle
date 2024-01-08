@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordleGame.AboutPage"
+             Title="ABOUT">
+    <!--About page. How to play/image examples-->
+    <ScrollView>
+        <StackLayout>
+            <VerticalStackLayout WidthRequest="350" VerticalOptions="Start">
+                <Label
+                    Padding="10"
+                    Text="Game Rules"
+                    FontSize="28"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                <Label 
+                    Padding="10"
+                    Text="You have to guess a WORDLE in 6 tries."
+                    FontSize="14"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" />
+                <Label 
+                    Padding="10"
+                    Text="Each guess must contain an actual 5-letter word. When you are done with your guess, press the enter button to submit."
+                    FontSize="14"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" />
+                <Label 
+                    Padding="10"
+                    Text="After each of your guesses, the color of the tile will change to either GREEN, YELLOW, or GRAY, which will give you a hint and show how close you are to guessing the right word."
+                    FontSize="14"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" />
+                <!--Line to separate text-->
+                <Line X1="350"
+                      Y1="0"
+                      X2="0"
+                      Y2="0"
+                      Stroke="#3A3A3C" />
+                <Label 
+                    Padding="10"
+                    Text="Example"
+                    FontSize="28"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                <!--Green box example-->
+                <Image Source="example1.png"/>
+                <Label 
+                    Padding="10"
+                    Text="The letter C is in the word and in the correct place."
+                    FontSize="14"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" />
+                <!--Yellow box example-->
+                <Image Source="example2.png"/>
+                <Label 
+                    Padding="10"
+                    Text="The letter T is in the word but in the wrong place."
+                    FontSize="14"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" />
+                <!--Gray box example-->
+                <Image Source="example3.png"/>
+                <Label 
+                    Padding="10"
+                    Text="The letter L is not in the word in any place."
+                    FontSize="14"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" />
+                <!--Line to separate text-->
+                <Line X1="350"
+                      Y1="0"
+                      X2="0"
+                      Y2="0"
+                      Stroke="#3A3A3C" />
+                <Label
+                    Padding="10"
+                    Text="How To Play"
+                    FontSize="28"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                <Label 
+                    Padding="10"
+                    Text="- Press the 'Start' button to start a new game.&#xA;- Enter Username.&#xA;- Enter guess  in the 'Answer' field and press the 'Guess' button.&#xA;- You can reset the game by pressing the 'Reset' button."
+                    FontSize="14"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

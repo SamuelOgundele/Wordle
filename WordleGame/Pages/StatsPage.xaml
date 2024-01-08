@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="WordleGame.StatsPage"
+    Title="STATS">
+    <!--Stats page-->
+    <ScrollView WidthRequest="350" VerticalOptions="Start">
+        <VerticalStackLayout>
+            <Label 
+                x:Name="HeaderLabel"
+                Text="Stats"
+                FontSize="28"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                Padding="10"/>
+            <Line X1="350"
+                  Y1="0"
+                  X2="0"
+                  Y2="0"
+                  Stroke="#3A3A3C" />
+            <Label 
+                x:Name="StatsLabel"
+                Text=""
+                Padding="10"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
